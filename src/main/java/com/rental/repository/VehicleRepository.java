@@ -7,7 +7,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import com.rental.entity.Vehicle;
+
+@SuppressWarnings("unused")
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle, String> {
-    List<Vehicle> findByVehicleStatus(String status);
 }
